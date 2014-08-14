@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/title_bar_bg" >
+
+        <TextView
+            android:id="@+id/todo_edit_cancel"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/todo_edit_activity_cancel"
+            android:textColor="#d2d2d2"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:onClick="onCancelTodoClick" />
+
+        <TextView
+            android:id="@+id/todo_edit_title"
+            style="@style/title_bar_text_common_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/todo_edit_activity_title_1" />
+
+        <TextView
+            android:id="@+id/todo_edit_save"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/todo_edit_activity_save"
+            android:textColor="#d2d2d2"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:onClick="onSaveTodoClick" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dadcdd"
+        android:layout_marginTop="17dp"/>
+
+    <EditText
+        android:id="@+id/todo_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#ffffff"
+        android:gravity="left|top"
+        android:hint="请输入待办内容"
+        android:inputType="textMultiLine"
+        android:textColor="#1d1d1d"
+        android:textColorHint="#bcbcbc"
+        android:textSize="16sp" >
+    </EditText>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dadcdd"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dadcdd"
+        android:layout_marginTop="17dp"/>
+    
+    <RelativeLayout
+        android:id="@+id/todo_edit_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:background="@drawable/todo_edit_row_bg"
+        android:clickable="true" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="提醒开关"
+            android:textColor="#1d1d1d"
+            android:textSize="17sp" />
+        
+        <ImageView
+            android:id="@+id/reminder_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix" />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dadcdd"/>
+
+    <RelativeLayout
+        android:id="@+id/todo_edit_datetime_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:background="@drawable/todo_edit_row_bg"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="提醒时间"
+            android:textColor="#1d1d1d"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/todo_edit_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/setting_arrow" />
+        
+        <TextView
+            android:id="@+id/todo_edit_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/todo_edit_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="设置"
+            android:textColor="#8a8a8a"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dadcdd"/>
+
+</LinearLayout>

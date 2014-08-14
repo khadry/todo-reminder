@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TodoReminder</string>
+    
+    <string name="todo_list_activity">待办</string>
+    <string name="todo_list_title">待办</string>
+    <string name="memo_entry">备忘(%d)</string>
+    <string name="todo_add_str">新增待办</string>
+    
+    <string name="todo_edit_activity_cancel">取消</string>
+    <string name="todo_edit_activity_title_1">新增待办</string>
+    <string name="todo_edit_activity_title_2">编辑待办</string>
+    <string name="todo_edit_activity_save">保存</string>
+
+</resources>

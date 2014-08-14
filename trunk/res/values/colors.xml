@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bar_bg">#ff00008B</color>
+    <color name="todo_list_item_bg_p">#f0f0f0</color>
+    <color name="todo_add_bg">#eaebf1</color>
+    <color name="todo_add_bg_p">#d2d3d8</color>
+    
+    <color name="date_time_dlg_btn_bg_p">#d9d9d9</color>
+    
+    <color name="todo_edit_row_bg">#ffffff</color>
+    <color name="todo_edit_row_bg_p">#f0f0f0</color>
+    
+    <color name="query_dlg_btn_bg_p">#d9d9d9</color>
+</resources>
