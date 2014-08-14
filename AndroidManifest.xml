@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="toby.han.todo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="toby.han.todo.ui.TodoListActivity"
+            android:label="@string/todo_list_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainActivityStyle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="toby.han.todo.ui.TodoEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/GeneralActivityStyle" >
+        </activity>
+        <activity
+            android:name="toby.han.todo.ui.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:allowTaskReparenting="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:taskAffinity="toby.han.todo.notification"
+            android:theme="@style/NotificationDlgStyle" >
+        </activity>
+        <receiver android:name="toby.han.todo.notify.TodoAlarmReceiver"></receiver>
+        <receiver
+            android:name="toby.han.todo.notify.TodoBootReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" ></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

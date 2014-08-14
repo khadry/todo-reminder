@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/query_dlg_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/queryDlg_msg"
+        style="@style/query_dlg_title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="message" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e3e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/queryDlg_confirm"
+            style="@style/query_dlg_btn_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_dlg_btn_bg"
+            android:text="确定"
+            android:clickable="true" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#e3e3e3" />
+
+        <TextView
+            android:id="@+id/queryDlg_cancel"
+            style="@style/query_dlg_btn_style"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_dlg_btn_bg"
+            android:clickable="true"
+            android:text="取消" />
+        
+    </LinearLayout>
+
+</LinearLayout>
