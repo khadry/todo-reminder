@@ -109,12 +109,12 @@
     <target name="replacemanifest">
         <echo>replacemanifest</echo>
         <delete file="${basedir}\AndroidManifest.xml"/>
-        <copy file="temp\build\META-INF\AndroidManifest.xml" todir="${basedir}" encoding="utf-8"/>
+        <copy file="gen\temp\build\META-INF\AndroidManifest.xml" todir="${basedir}" encoding="utf-8"/>
     </target>
 
     <target name="savemanifest">
         <echo>savemanifest</echo>
-        <copy file="${basedir}\AndroidManifest.xml" todir="temp\build\META-INF" encoding="utf-8" />
+        <copy file="${basedir}\AndroidManifest.xml" todir="gen\temp\build\META-INF" encoding="utf-8" />
     </target>
 
     <target name="deletebin">
